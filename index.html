@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N'do ba-guiné  Portal de Notícias</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">N'do ba-guiné</div>
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+    
+    <header>
+        <h1>Portal N'do ba-guiné</h1>
+        <p>Informação em tempo real sobre Tecnologia, Desporto e Mundo</p>
+    </header>
+
+    <main>
+        <section id="noticias">
+            <h2 class="titulo-secao">Últimas Notícias</h2>
+            
+            <div class="noticias-grid">
+                <article class="card">
+                    <img src="imagens/Linux.jpeg" alt="Símbolo do Linux">
+                    <span class="tag">Tecnologia</span>
+                    <h3>História do Linux</h3>
+                    <p>Descubra como o kernel criado por LinuxTorvalds revolucionou a computação moderna.</p>
+                </article>
+
+                <article class="card">
+                    <img src="imagens/Android.jpeg" alt="Logo do Android">
+                    <span class="tag">Mobile</span>
+                    <h3>A Ascensão do Android</h3>
+                    <p>De um sistema para câmeras digitais ao sistema operacional mais usado no planeta.</p>
+                </article>
+
+                <article class="card">
+                    <img src="imagens/internte.jpeg" alt="Rede Global">
+                    <span class="tag">Mundo</span>
+                    <h3>O Impacto da Internet</h3>
+                    <p>Como a conexão global transformou a economia e as relações humanas nas últimas décadas.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="comentarios">
+            <h2>Comentários dos Leitores</h2>
+            <div id="lista-comentarios">
+                <p class="sem-comentario">Seja o primeiro a comentar sobre estas notícias! Faça comentários de forma moderada.</p>
+            </div>
+            
+            <form id="form-comentario">
+                <input type="text" id="nome-comentario" placeholder="Seu nome" required>
+                <textarea id="texto-comentario" placeholder="Deixe sua opinião aqui..." required></textarea>
+                <button type="submit">Publicar Comentário</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <p>Dúvidas, críticas ou sugestões de pauta? Nossa equipe está pronta para ouvir você com o carinho.</p>
+            
+            <form action="https://formspree.io/f/xzdddvkw" method="POST">
+                <label for="email">Seu e-mail:</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+                
+                <label for="mensagem">Sua mensagem:</label>
+                <textarea name="message" id="mensagem" placeholder="Escreva aqui sua sugestão..." required></textarea>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 N'do ba-guiné - O seu portal de notícias de confiança.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
